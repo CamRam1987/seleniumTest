@@ -10,7 +10,7 @@ public class CifradoCesar {
         char opcion;
         //Introducir un texto
         do {
-            System.out.print("Introduce un texto: ");
+            System.out.print("Introduce un texto: prueba");
             texto = sc.nextLine();
         } while (texto.isEmpty());
         //Introducir el valor del desplazamiento
@@ -32,7 +32,7 @@ public class CifradoCesar {
     }
 
     //método para cifrar el texto
-    public static String cifradoCesar(String texto, int codigo) {
+    public static String cifradoCesar(String texto, int codigo, Scanner sc) {
         StringBuilder cifrado = new StringBuilder();
         codigo = codigo % 26;
         for (int i = 0; i < texto.length(); i++) {
@@ -52,7 +52,34 @@ public class CifradoCesar {
         }
         return cifrado.toString();
     }
+    public static String cifradoNumerico(String texto){
+        char letra;
+        String frase="";
+        String frase2="";
+        for (int j = 0; j < frase.length(); j++) {
+            letra = frase.charAt(j);
 
+            if (letra=='a') {
+                letra = 1;
+            }
+            if (letra=='e') {
+                letra = 2;
+            }
+            if (letra=='i') {
+                letra = 3;
+            }
+            if (letra=='o') {
+                letra = 4;
+            }
+            if (letra=='u') {
+                letra = 5;
+            }
+            else {
+                frase2 = frase2+letra;
+            }
+        }
+
+    }
     //método para descifrar el texto
     public static String descifradoCesar(String texto, int codigo) {
         StringBuilder cifrado = new StringBuilder();

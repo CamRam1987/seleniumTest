@@ -25,7 +25,7 @@ public class CifradoCesar {
             opcion = (char) System.in.read();
         } while (Character.toUpperCase(opcion) != 'C' && Character.toUpperCase(opcion) != 'D');
         if (Character.toUpperCase(opcion) == 'C') {
-            System.out.println("Texto cifrado: " + cifradoCesar(texto, codigo));
+            System.out.println("Texto cifrado: " + cifradoCesar(texto, codigo, sc));
         } else {
             System.out.println("Texto descifrado: " + descifradoCesar(texto, codigo));
         }
@@ -78,7 +78,7 @@ public class CifradoCesar {
                 frase2 = frase2+letra;
             }
         }
-
+        return frase2;
     }
     //método para descifrar el texto
     public static String descifradoCesar(String texto, int codigo) {

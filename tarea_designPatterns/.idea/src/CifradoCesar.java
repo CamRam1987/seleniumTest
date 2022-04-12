@@ -10,7 +10,7 @@ public class CifradoCesar {
         char opcion;
         //Introducir un texto
         do {
-            System.out.print("Introduce un texto: prueba");
+            System.out.print("Introduce un texto: prueba1");
             texto = sc.nextLine();
         } while (texto.isEmpty());
         //Introducir el valor del desplazamiento

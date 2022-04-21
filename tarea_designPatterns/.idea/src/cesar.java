@@ -4,6 +4,7 @@ public class cesar {
     public static String cifradoCesar(String textoacodificar) {
         StringBuilder cifrado = new StringBuilder();
         Scanner sc2 = new Scanner(System.in);
+        filePrint fp=new filePrint();
         int codigo;
         //Introducir el valor del desplazamiento
         do {

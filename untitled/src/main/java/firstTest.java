@@ -1,3 +1,4 @@
+import POM.Base;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,8 +7,9 @@ import org.testng.Assert;
 
 import java.nio.file.Paths;
 
-public class firstTest {
-    public static void main(String[] args) throws InterruptedException {
+public class firstTest{
+        public static void main(String[] args) throws InterruptedException {
+
         String path= Paths.get(System.getProperty("user.dir"),"src/main/resources/chromedriver_win32 (4)/chromedriver.exe").toString();
         System.setProperty("webdriver.chrome.driver",path.toString());
         String [] array;
